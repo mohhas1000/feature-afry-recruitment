@@ -280,7 +280,7 @@ public class TollServiceTests
             {
                 DateTime.Parse("2024-06-16T08:29:00"), 
             },
-            13 // The expected toll fee
+            13 // The expected toll fee.
             },
             new object[] { "ABC123", new List<DateTime>
             {
@@ -294,7 +294,7 @@ public class TollServiceTests
                 DateTime.Parse("2024-06-17T11:00:00"),
                 DateTime.Parse("2024-06-17T16:00:00")
             },
-            47 // The expected toll fee
+            47 // The expected toll fee.
             },
             new object[] { "XYZ999", new List<DateTime>
             {
@@ -304,7 +304,7 @@ public class TollServiceTests
                 DateTime.Parse("2024-06-18T14:30:00"),
                 DateTime.Parse("2024-06-18T18:55:00")
             },
-            24 // The expected toll fee
+            24 // The expected toll fee.
             },
             new object[] { "VVV789", new List<DateTime>
             {
@@ -315,10 +315,12 @@ public class TollServiceTests
                 DateTime.Parse("2024-06-19T11:30:00"),
                 DateTime.Parse("2024-06-19T20:30:00")
             },
-            42 // The expected toll fee,
+            42 // The expected toll fee.
             },
             new object[] { "VVV33", new List<DateTime>
             {
+                DateTime.Parse("2024-06-20T07:37:00"),
+                DateTime.Parse("2024-06-20T09:37:00"),
                 DateTime.Parse("2024-06-20T13:37:00"),
                 DateTime.Parse("2024-06-20T13:45:00"),
                 DateTime.Parse("2024-06-20T14:25:00"), 
@@ -329,7 +331,7 @@ public class TollServiceTests
                 DateTime.Parse("2024-06-20T17:00:00"),
                 DateTime.Parse("2024-06-20T17:10:00")
             },
-            44, // The expected toll fee,
+            60, // The maximum possible toll fee. 
             }
     };
     }
